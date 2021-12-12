@@ -7,7 +7,7 @@
             <Col span="4">
               <Button type="primary" size="default" icon="md-refresh"  @click="refresh">刷新
               </Button>
-              <Button type="error" @click="remove()">删除</Button>
+              <Button type="error" @click="remove()" icon="ios-backspace">删除</Button>
             </Col>
 
             <Col span="8">
@@ -24,8 +24,8 @@
           <br>
           <Table :loading="loading" :columns="columns" :data="data" @on-selection-change="selectWebsite">
             <template slot-scope="{ row }" slot="action">
-              <Button type="info" @click="editWebsite(row)">编辑</Button>
-              <Button type="primary" @click="editIcon(row)">替换图标</Button>
+              <Button type="info" @click="editWebsite(row)" icon="md-create">编辑该网址</Button>
+              <Button type="primary" @click="editIcon(row)" icon="ios-color-palette">替换图标</Button>
             </template>
           </Table>
           <br>

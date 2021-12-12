@@ -6,7 +6,7 @@
           <Row>
             <Col span="8">
               <div style="margin-bottom: 16px">
-                <Button type="primary" size="default" icon="md-add" style="margin-right: 5px" @click="addUser">新增
+                <Button type="primary" size="default" icon="md-add-circle" style="margin-right: 5px" @click="addUser">新增
                 </Button>
               </div>
             </Col>

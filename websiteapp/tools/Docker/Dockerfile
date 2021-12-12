@@ -5,7 +5,7 @@ RUN apk update && apk add --no-cache  nginx mariadb nodejs-npm git build-base  s
 RUN apk add --no-cache --virtual .build-deps  openssl-dev gcc musl-dev python3-dev libffi-dev openssh-client make \
     && mkdir /etc/supervisor.d
 
-RUN git clone https://github.com/mizhexiaoxiao/WebsiteGuide.git --depth=1 /WebsiteGuide && cd /WebsiteGuide && git pull
+RUN git clone https://github.com/linyup/WebsiteGuide.git --depth=1 /WebsiteGuide && cd /WebsiteGuide && git pull
 
 RUN cd /WebsiteGuide/websitefronted && npm install -g cnpm --registry=https://registry.npm.taobao.org && cnpm install &&  npm run build
 

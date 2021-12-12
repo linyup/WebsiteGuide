@@ -1,16 +1,16 @@
 <template>
   <Sider :style="{position: 'fixed', height: '100vh', left: 0, overflow: 'auto'}">
     <div class="logo-con">
-        <span style="line-height: 60px; font-weight: 800; font-size: 20px; color: white;">
-          Website Guide
+        <span style="line-height: 60px; font-weight: 700; font-size: 20px; color: white;">
+          HELIOS WebGuide
         </span>
     </div>
     <Menu theme="light" width="auto" @on-select="anchor" @on-open-change="handleopen" :accordion="true"
           :open-names="['submenu-1']">
       <Submenu name="submenu-1" v-show="isShowWebsite">
         <template slot="title">
-          <Icon style="color: #fff" type="ios-navigate"></Icon>
-          <span>网址导航</span>
+          <Icon style="color: #fff" type="md-planet" />
+          <span>速用网址导航</span>
         </template>
         <MenuItem v-for="item in $store.state.websiteList" :name="item.id" :key="item.id">
           <span>{{item.name}}</span>
@@ -18,23 +18,26 @@
       </Submenu>
       <Submenu name="submenu-2" v-show="!isShowWebsite">
         <template slot="title">
-          <Icon style="color: #fff" type="ios-construct" />
-          <span>后台管理</span>
+          <Icon style="color: #fff" type="md-options" />
+          <span>网址管理</span>
         </template>
         <MenuItem name="group-manage">
-          <span>分组管理</span>
+          <Icon style="color: #fff" type="ios-pricetags" />
+          <span>网址标签</span>
         </MenuItem>
         <MenuItem name="website-manage">
-          <span>网址管理</span>
+          <Icon style="color: #fff" type="md-desktop" />
+          <span>网址详情</span>
         </MenuItem>
       </Submenu>
       <Submenu name="submenu-3" v-show="!isShowWebsite">
         <template slot="title">
-          <Icon style="color: #fff" type="md-settings" />
-          <span>系统管理</span>
+          <Icon style="color: #fff" type="ios-people" />
+          <span>用户管理</span>
         </template>
         <MenuItem name="user-manage">
-          <span>用户管理</span>
+          <Icon style="color: #fff" type="md-walk" />
+          <span>用户详情</span>
         </MenuItem>
       </Submenu>
 

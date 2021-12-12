@@ -6,7 +6,7 @@
           <Row>
             <Col span="8">
               <div style="margin-bottom: 16px">
-                <Button type="primary" size="default" icon="md-add"  @click="addGroup">新增</Button>
+                <Button type="primary" size="default" icon="md-add-circle"  @click="addGroup">新增</Button>
               </div>
             </Col>
             <Col span="6" offset="10">
@@ -16,9 +16,9 @@
           </Row>
           <Table :loading="loading" :columns="columns" :data="data">
             <template slot-scope="{ row }" slot="action">
-              <Button type="primary" @click="addWebsite(row)">添加网址</Button>
-              <Button type="info" @click="editGroup(row)">编辑</Button>
-              <Button type="error" @click="remove(row)">删除</Button>
+              <Button type="primary" @click="addWebsite(row)" icon="md-add-circle">标签内新增网址</Button>
+              <Button type="info" @click="editGroup(row)" icon="md-create">编辑该标签</Button>
+              <Button type="error" @click="remove(row)" icon="ios-backspace">删除该标签</Button>
             </template>
           </Table>
           <br>
