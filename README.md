@@ -14,25 +14,21 @@
 
 ### 网址导航
 
-![image](https://github.com/mizhexiaoxiao/WebsiteGuide/blob/main/websiteapp/media/sample-picture/5.jpg)
+![image](https://github.com/linyup/WebsiteGuide/blob/main/websiteapp/media/sample-picture/5.jpg)
 
 ### 支持批量添加
 
-![image](https://github.com/mizhexiaoxiao/WebsiteGuide/blob/main/websiteapp/media/sample-picture/6.jpg)
+![image](https://github.com/linyup/WebsiteGuide/blob/main/websiteapp/media/sample-picture/6.jpg)
 
 ### 网址管理
 
-![image](https://github.com/mizhexiaoxiao/WebsiteGuide/blob/main/websiteapp/media/sample-picture/7.jpg)
+![image](https://github.com/linyup/WebsiteGuide/blob/main/websiteapp/media/sample-picture/7.jpg)
 
 ### 用户管理
 
-![image](https://github.com/mizhexiaoxiao/WebsiteGuide/blob/main/websiteapp/media/sample-picture/8.jpg)
+![image](https://github.com/linyup/WebsiteGuide/blob/main/websiteapp/media/sample-picture/8.jpg)
 
 ### 演示地址
-
-导航页 http://demo.mizhexiao.top:8000/
-
-管理后台 http://demo.mizhexiao.top:8000/admin
 
 username：admin
 
@@ -50,7 +46,7 @@ systemctl start docker
 ##### 构建镜像
 
 ```sh
-git clone https://github.com/mizhexiaoxiao/WebDockerfile.git
+git clone https://github.com/linyup/WebDockerfile.git
 cd WebDockerfile
 docker build --no-cache . -t websiteguide
 ```
